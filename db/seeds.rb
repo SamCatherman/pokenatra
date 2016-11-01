@@ -1,5 +1,4 @@
 require 'active_record'
-require 'ffaker'
 require 'pg'
 require_relative 'connection'
 require_relative '../models/pokemon'
@@ -13,3 +12,5 @@ Pokemon.create(name: "Clefairy", cp: rand(800), poke_type: "fairy", img_url: "ht
 Pokemon.create(name: "Nidoking", cp: rand(800), poke_type: "poison ground", img_url: "https://img.pokemondb.net/artwork/nidoking.jpg")
 Pokemon.create(name: "Gengar", cp: rand(800), poke_type: "ghost poison", img_url: "https://img.pokemondb.net/artwork/gengar.jpg")
 Pokemon.create(name: "Blastoise", cp: rand(800), poke_type: "water", img_url: "https://img.pokemondb.net/artwork/blastoise.jpg")
+
+puts "done"
